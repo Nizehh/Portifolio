@@ -1,3 +1,4 @@
+/* Estilo global */
 *{
     margin:0%;
     padding:0%;
@@ -16,6 +17,27 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn_contatos button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+}
+
+.btn_contatos button:hover{
+    box-shadow: 0px 0px 8px #ffffff;
+    display: inline-block;
+    transition: .2s;
 }
 
 /* Estilo do cabeçalho */
@@ -59,7 +81,7 @@ header nav ul li{
     padding: 0px 70px;
 }
 
-header .btn_contatos button{
+header.btn_contatos button{
     padding: 10px 40px;
     font-size: 20px;
     font-weight: 500;
@@ -70,8 +92,49 @@ header .btn_contatos button{
     border-radius: 20px;
 }
 
-header .btn_contatos button:hover{
+header.btn_contatos button:hover{
     box-shadow: 0px 0px 8px #ffffff;
     display: inline-block;
-    transition: .2s;
+    transform: scale(1.07);
+    transition: .3s;
+}
+
+
+/* Estilo da seção de apresentação */
+
+section.apresentacao{
+    padding: 40px 4%;
+}
+
+.apresentacao .foto-topo-site img{
+    width: 300px;
+    height: 400px;
+}
+section.apresentaca .flex{
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao h1{
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.apresentacao .texto-topo-site p{
+    color: #ffffff;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.apresentacao .btn-saiba-mais button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
 }
